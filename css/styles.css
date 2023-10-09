@@ -6,6 +6,8 @@
     padding: 0%;
 }
 
+
+
 header {
     height: 65px;
     width: 100%;
@@ -24,7 +26,7 @@ header nav h1 {
 
 header nav h1 ul li {
     width: 100%;
-    height: 100px;
+    height: 100%;
     display: flex;
 }
 
@@ -82,7 +84,7 @@ section {
 /* foto de portada */
 .portada.portada_img {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 
@@ -96,9 +98,12 @@ main section p {
 }
 
 .portada_img {
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
+
+/*////////////////////////////inicio//////////////////*/
+
 /* titulo*/
 h2 {
     text-align: center;
@@ -114,6 +119,10 @@ h3 {
 .container-info-metal-en-la-sangre__h3{
     text-align: center;
 }
+
+
+
+/*////////////////////footer/////////////////////*/
 
 /* logo*/
 .footer__icn-mundo-metal img {
@@ -131,6 +140,7 @@ h3 {
 
 footer {
 width: 80%;
+flex-wrap: wrap;
 background-color: black;
 padding: 0 10% 0;
 display:flex ;
@@ -151,13 +161,42 @@ font-family: 'Croissant One', cursive;
 }
 
 
-/*contactos*/
+@media screen and (max-width:576px){
+    .footer .footer__links .footer__icn-mundo-metal .footer-jime_redes{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:768px){
+    .footer .footer__links .footer__icn-mundo-metal .footer-jime_redes {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:992px){
+    .footer .footer__links .footer__icn-mundo-metal .footer-jime_redes {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .footer .footer__links .footer__icn-mundo-metal .footer-jime_redes {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+
+/*///////////////////////contactos/////////////*/
 
 form {
 background-color: white;
 max-width: 400px;
 border-radius: 10px;
-padding: 10px;
+padding: 30px;
 margin: 0 auto;
 backdrop-filter: blur(2px);
 background-color: rgb(140, 124, 124);
@@ -165,6 +204,7 @@ background-color: rgb(140, 124, 124);
 
 .form-container {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -172,7 +212,7 @@ background-color: rgb(140, 124, 124);
 .form-input {
     margin-top: 10px;
     font-size: 15px;
-    padding: 10px;
+    padding: 20px;
     /* input*/
     outline: none;
     border: none;
@@ -181,8 +221,8 @@ background-color: rgb(140, 124, 124);
 
 .form_mensaje {
     resize: none;
-    padding-bottom: 80px;
-    margin-bottom: 15px;
+    padding-bottom: 100px;
+    margin-bottom: 25px;
 }
 
 .form_rta {
@@ -191,43 +231,49 @@ background-color: rgb(140, 124, 124);
     font-weight: 600;
     cursor: pointer;
 }
-/*//////////////////////////////*/
 
-/* grillas historia*/
+/*///////////////////////// historia///////////*/
 
-.historia {
-    display: grid;
-    grid-template-columns:550px 500px;
-    grid-template-rows: 100px 400px 150px;
-    grid-auto-rows: minmax(125px,auto);
-    grid-template-areas: 
-    "historia_ historia_"
-    "historia_img historia_p";
+.container-historia {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
 
-.historia {
-    grid-area: historia;
+.card-historia {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: rgb(156, 140, 140);
+    box-shadow: 6px 1px 10px rgba (0,0,0,0.2);
+    cursor: default;
 }
-
-.historia_ {
-    grid-area: historia_;
+.card .img  {
+    width: 100%;
+    height: 100%;
+}
+.card-historia .contenido-historia  {
+    padding: 15px;
     text-align: center;
 }
-
-.historia_img {
-    grid-area: historia_img;
-}
-
-.historia_p {
-    grid-area: historia_p;
+.card-historia .contenido-historia p {
+    line-height: 1;
+    color:rgb(3, 3, 3)
 }
 
 
-/*/////// generos//////////*/
+
+/*//////////////////////// generos/////////////////////*/
 
 .container {
     width: 100%;
+    height: auto;
     display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
 
 .card {
@@ -246,7 +292,7 @@ background-color: rgb(140, 124, 124);
 }
 .card img {
     width: 100%;
-    height: 210%;
+    height: auto;
 }
 .card.contenido {
     padding: 15px;
@@ -270,6 +316,33 @@ background-color: rgb(140, 124, 124);
 .card .contenido a:hover {
     background: rgb(41, 39, 39);
     color:rgb(236, 233, 239)
+}
+
+@media screen and (max-width:576px){
+    .container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:768px){
+    .container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:992px){
+    .container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:1200px){
+    .container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
 }
 
 /*////////////////////////albumes//////////////////////*/
@@ -303,4 +376,32 @@ background-color: rgb(140, 124, 124);
 .card1 img {
     width: 100%;
     height: 210%;
+}
+
+@media screen and (max-width:576px){
+    .container-albumes {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:768px){
+    .container-albumes {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:992px){
+    .container-albumes {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
 }
