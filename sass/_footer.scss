@@ -1,0 +1,66 @@
+/*////////////////////footer/////////////////////*/
+
+/* logo*/
+.footer__icn-mundo-metal img {
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;
+}
+/* iconos de links*/
+.footer-jime_redes ul li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 55%;
+
+}
+
+footer {
+width: 80%;
+flex-wrap: wrap;
+background-color: black;
+padding: 0 10% 0;
+display:flex ;
+justify-content: space-between;
+align-items: center;
+margin-top: auto;
+}
+
+
+.footer__links ul li {
+font-size: 22px;
+font-family: 'Croissant One', cursive;
+}
+
+.footer__links ul li a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+
+@media screen and (max-width:576px){
+    .footer .footer__links .footer__icn-mundo-metal .footer-jime_redes{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:768px){
+    .footer .footer__links .footer__icn-mundo-metal .footer-jime_redes {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:992px){
+    .footer .footer__links .footer__icn-mundo-metal .footer-jime_redes {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .footer .footer__links .footer__icn-mundo-metal .footer-jime_redes {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,32 @@
+/*///////////////////////// historia///////////*/
+
+.container-historia {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.card-historia {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: rgb(156, 140, 140);
+    box-shadow: 6px 1px 10px rgba (0,0,0,0.2);
+    cursor: default;
+}
+.card .img  {
+    width: 100%;
+    height: 100%;
+}
+.card-historia .contenido-historia  {
+    padding: 15px;
+    text-align: center;
+}
+.card-historia .contenido-historia p {
+    line-height: 1;
+    color:rgb(3, 3, 3)
+}
+
